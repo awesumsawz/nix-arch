@@ -13,14 +13,23 @@
   outputs = { nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
+     pkgs = nixpkgs.legacyPackages.${system};
     in {
-      homeConfigurations."jbiggs" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."rogue" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
-        modules = [ ./home.nix ];
+        modules = [ 
+          ./home.nix 
+          # home-manager.nixosModuel {
+          #   home-manager = {
+          #     home-manager.extraSpecialArgs = {
+          #       inherit unstable;
+          #     };
+          #   };
+          # }
+        ];
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix

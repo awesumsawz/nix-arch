@@ -1,39 +1,62 @@
 { config, pkgs, ... }:
 
 {
-  # Home Manager needs a bit of information about you and the paths it should
-  # manage.
   home.username = "jbiggs";
   home.homeDirectory = "/home/jbiggs";
 
-  # This value determines the Home Manager release that your configuration is
-  # compatible with. This helps avoid breakage when a new Home Manager release
-  # introduces backwards incompatible changes.
-  #
-  # You should not change this value, even if you update Home Manager. If you do
-  # want to update the value, then make sure to first check the Home Manager
-  # release notes.
   home.stateVersion = "24.11"; # Please read the comment before changing.
-
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
+  nixpkgs.config.allowUnfree = true;
   home.packages = [
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
-    # pkgs.hello
-
-    # # It is sometimes useful to fine-tune packages, for example, by applying
-    # # overrides. You can do that directly here, just don't forget the
-    # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
-    # # fonts?
-    # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
-
-    # # You can also create simple shell scripts directly inside your
-    # # configuration. For example, this adds a command 'my-hello' to your
-    # # environment:
-    # (pkgs.writeShellScriptBin "my-hello" ''
-    #   echo "Hello, ${config.home.username}!"
-    # '')
+    pkgs._1password-cli
+    pkgs._1password-gui
+    # pkgs.home-manager
+    pkgs.wayclip
+    pkgs.ansible
+    pkgs.awscli
+    pkgs.bat
+    pkgs.borgbackup
+    pkgs.brave
+    pkgs.btop
+    pkgs.bun
+    pkgs.code-cursor
+    pkgs.coreutils
+    pkgs.docker
+    pkgs.docker-compose
+    pkgs.docker-ls
+    pkgs.eza
+    pkgs.fzf
+    pkgs.gh
+    pkgs.git
+    pkgs.github-copilot-cli
+    pkgs.gitkraken
+    pkgs.gnumake
+    pkgs.jq
+    pkgs.kubectl
+    pkgs.lazygit
+    pkgs.neovim
+    pkgs.obsidian
+    pkgs.postgresql
+    pkgs.python3Full
+    pkgs.qemu
+    pkgs.qmk
+    # pkgs.raycast
+    pkgs.ripgrep
+    # pkgs.sketchybar
+    pkgs.speedtest-cli
+    pkgs.starship
+    pkgs.stow
+    pkgs.terraform
+    pkgs.thefuck
+    pkgs.tree
+    pkgs.tree-sitter
+    pkgs.vim
+    pkgs.vivid
+    pkgs.vscode
+    pkgs.xz
+    pkgs.yq
+    pkgs.zoxide
+    pkgs.zsh
+    pkgs.zellij
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
