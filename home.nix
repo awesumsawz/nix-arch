@@ -7,8 +7,8 @@
   home.stateVersion = "24.11"; # Please read the comment before changing.
   nixpkgs.config.allowUnfree = true;
   home.packages = [
-    pkgs._1password-cli
-    pkgs._1password-gui
+    # pkgs._1password-cli
+    # pkgs._1password-gui
     # pkgs.home-manager
     pkgs.wayclip
     pkgs.ansible
@@ -56,7 +56,10 @@
     pkgs.zsh
     pkgs.zellij
     # pkgs.ghostty
-
+    pkgs.nodejs
+    pkgs.hypridle
+    pkgs.hyprlock
+    pkgs.hyprpaper
 
     pkgs.nerd-fonts.fira-code
     pkgs.nerd-fonts.hack
