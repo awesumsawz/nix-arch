@@ -39,9 +39,7 @@
     pkgs.python3Full
     pkgs.qemu
     pkgs.qmk
-    # pkgs.raycast
     pkgs.ripgrep
-    # pkgs.sketchybar
     pkgs.speedtest-cli
     pkgs.starship
     pkgs.stow
@@ -57,8 +55,18 @@
     pkgs.zoxide
     pkgs.zsh
     pkgs.zellij
-  ];
+    pkgs.ghostty
 
+
+    pkgs.nerd-fonts.fira-code
+    pkgs.nerd-fonts.hack
+    pkgs.nerd-fonts.jetbrains-mono
+    pkgs.nerd-fonts.mononoki
+    pkgs.nerd-fonts.ubuntu-mono
+    pkgs.nerd-fonts.roboto-mono
+
+    # inputs.zen-browser.packages."${system}".specific
+  ];
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
