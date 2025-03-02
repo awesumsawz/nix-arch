@@ -57,9 +57,28 @@
     pkgs.zellij
     # pkgs.ghostty
     pkgs.nodejs
+    pkgs.hyprland
     pkgs.hypridle
     pkgs.hyprlock
     pkgs.hyprpaper
+    pkgs.iwgtk
+    pkgs.hyprshot
+    # pkgs.hyprsome
+    # pkgs.hyprnome
+    # pkgs.hyprkeys
+    # pkgs.hyprutils
+    # pkgs.hyprspace
+    # pkgs.hyprsunset
+    # pkgs.hyprpicker
+    # pkgs.hyprnotify
+    # pkgs.hyprcursor
+    # pkgs.hyprland-workspaces
+    # pkgs.hyprlandPlugins.hyprgrass
+    # pkgs.hyprlandPlugins.hyprfocus
+    # pkgs.hyprlandPlugins.hyprtrails
+    # pkgs.hyprlandPlugins.borders-plus-plus
+    # pkgs.hyprlandPlugins.hypr-dynamic-cursors
+
 
     pkgs.nerd-fonts.fira-code
     pkgs.nerd-fonts.hack
