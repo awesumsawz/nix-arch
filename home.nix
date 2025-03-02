@@ -7,9 +7,6 @@
   home.stateVersion = "24.11"; # Please read the comment before changing.
   nixpkgs.config.allowUnfree = true;
   home.packages = [
-    # pkgs._1password-cli
-    # pkgs._1password-gui
-    # pkgs.home-manager
     pkgs.wayclip
     pkgs.ansible
     pkgs.awscli
@@ -55,11 +52,29 @@
     pkgs.zoxide
     pkgs.zsh
     pkgs.zellij
-    # pkgs.ghostty
     pkgs.nodejs
+    pkgs.hyprland
     pkgs.hypridle
     pkgs.hyprlock
     pkgs.hyprpaper
+    pkgs.networkmanager
+    pkgs.hyprshot
+    # pkgs.hyprsome
+    # pkgs.hyprnome
+    # pkgs.hyprkeys
+    # pkgs.hyprutils
+    # pkgs.hyprspace
+    # pkgs.hyprsunset
+    # pkgs.hyprpicker
+    # pkgs.hyprnotify
+    # pkgs.hyprcursor
+    # pkgs.hyprland-workspaces
+    # pkgs.hyprlandPlugins.hyprgrass
+    # pkgs.hyprlandPlugins.hyprfocus
+    # pkgs.hyprlandPlugins.hyprtrails
+    # pkgs.hyprlandPlugins.borders-plus-plus
+    # pkgs.hyprlandPlugins.hypr-dynamic-cursors
+
 
     pkgs.nerd-fonts.fira-code
     pkgs.nerd-fonts.hack
@@ -67,8 +82,6 @@
     pkgs.nerd-fonts.mononoki
     pkgs.nerd-fonts.ubuntu-mono
     pkgs.nerd-fonts.roboto-mono
-
-    # inputs.zen-browser.packages."${system}".specific
   ];
 
   home.file = {
